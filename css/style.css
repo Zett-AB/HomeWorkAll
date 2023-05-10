@@ -41,3 +41,49 @@ h1, h2, h3, h4, h5, h6{
     font-size: 18px;
     text-align: center;
 }
+.subtitle{
+    font-size: 35px;
+    text-align: center;
+}
+p{
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+}
+
+.errors_tasks{
+    border: 2px solid salmon;    
+}
+.practik_function{
+    margin-top: 30px;
+    border: 2px solid seagreen;
+}
+.task_str{
+    text-align: center;
+}
+.subtitle_task{
+    font-size: 30px;
+    text-align: center;
+}
+.str_task{
+    color:blue;
+    text-align: center;
+}
+.code_js_task{
+    border: 1px solid blueviolet;
+    background-color: blanchedalmond;
+    padding: 40px;
+}
+.code_js_task p{
+    font-family: Philosopher;
+    font-size: 20px;
+    color: red;    
+}
+.str_task_answer{    
+    color: blue;
+    font-family: Montserrat Alternates;
+}
+.line{
+    margin-top: 30px;
+    width: 25%;
+    border-top: 1px solid blueviolet;
+}

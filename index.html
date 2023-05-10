@@ -21,8 +21,596 @@
             в том числе и решения к ним, но не все решения в файле HTML.
         </p>
     </header>
-    <section class=""><h2 class="subtitle"></h2><div class=""><p></p></div></section>
-    <section class=""><h2 class="subtitle"></h2><div class=""><p></p></div></section>
+    <section class="errors_tasks">
+        <h2 class="subtitle">
+            Поиск ошибок в коде с функциями JavaScript
+        </h2>
+        <div class="">
+            <p class="task_str">
+                В следующих задачах некоторый программист написал код и, возможно, допустил в нем ошибки.<br>
+                Вы должны проверить, делает ли код то, что описано.<br>
+                Если код работает некорректно, вы должны исправить ошибки.
+                Всего 10 задач.
+            </p>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 1
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму результатов работы двух функций:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        function func1() {<br>
+                            console.log/alert(3);<br>
+                        }<br>
+                        function func2() {<br>
+                            console.log/alert(5);<br>
+                        }<br><br>
+                        
+                        console.log/alert( func1() + func2() );
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>
+                            В данном коде не будет работать последняя срока<br>
+                            консоль или вывод на экран будут выдывать <b>NaN</b>, поскольку внесенные числа не возвращаются в функции.<br>
+                            Для исправления добавляем в функцию <b>return</b>.
+                        </span>    
+                    </p>
+                </div>
+                
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 2
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму элементов массива:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        function sum(arr) {<br>
+                            let res = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                res += elem;<br>
+                                return res;<br>
+                            }<br>
+                        }<br><br>
+                        
+                        console.log/alert(sum([1, 2, 3, 4, 5]));
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>
+                            Выполнение данного кода всегда будет выводит 1, потому-что код будет выполнятся 1 раз.<br>
+                            Чтобы код выполнялся пока в массиве есть числа/значения, необходимо строку кода <b>return res;</b> вывести из цикла и вставить после него.<br>
+                            Тогда цикл <b>for</b> будет выполнятся столько раз сколько в массиве есть значений. 
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 3
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму элементов массива, однако, ничего не выводит в консоль:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        let arr = [1, 2, 3, 4, 5];<br><br>
+
+                        function func(arr) {<br>
+                            let res = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                res += elem;<br>
+                            }<br><br>
+                            
+                            console.log/alert(res);<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>
+                            В данном коде всего одна ошибка.<br>
+                            Сам код аналогичен задаче выше, в нашем случаи нам нужно заменить в предпоследней строке коде <b>console.log</b> на <b>return</b> и все, в этом случаи наша функция не будет выводить в консоль/браузер данные.                             
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 4
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму результатов работы двух функций:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        function func1() {<br>
+                            return 3;<br>
+                        }<br>
+                        function func2() {<br>
+                            return 5;<br>
+                        }<br><br>
+                        
+                        console.log/alert( func1 + func2 );
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>
+                            Тут все просто, если внимательно посмотреть на код, то мы увидим, что отсутствуют скобки в выводе значений функций, т.е. нам надо поставить в последний строке кода скобки, а именно:<br>
+                            console.log/alert( func1() + func2() );
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 5
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму элементов массива:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        let sum = sum([1, 2, 3, 4, 5]);<br>
+                        console.log/alert(sum);<br><br>
+
+                        function sum(arr) {<br>
+                            let sum = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                sum += elem;<br>
+                            }<br><br>
+                            
+                            return elem;<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br> 
+                            В данном коде сразу несколько ошибок:<br>
+                            <b>первая</b> - название функции и переменной одинаковые, поэтому правим название переменной(но вы можете исправить название функции, но помните, что название функции должно отражать её суть);<br>
+                            <b>вторая</b>  - в предпоследней строке кода нужно изменить elem на  sum, поскольку если функция будет возвращать elem, то она не будет считать сумму массива.                           
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 6
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму элементов массива:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        let res = sum([1, 2, 3, 4, 5]);<br>
+                        console.log/alert(res);<br><br>
+
+                        function sum(arr) {<br>
+                            let sum = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                sum += elem;<br>
+                            }<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>   
+                            В данном примере все просто, как мы видим функция не возвращает полученный результат, а поэтому и при её использовании выдает <b>undefinded</b>,<br>
+                            т.е. нам необходимо в конце функции добавить <b>return sum</b>.                          
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 7
+                </h3>
+                <p class="str_task">
+                    Функция добавляет ноль к числу от 1 до 9, а числа больше 9 возвращает без изменений:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        function add(num) {<br>
+                            if (num <= 9) {<br>
+                                return '0' + num;<br>
+                            }<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br> 
+                            В аднной функции в исходном фиде она будет возвращать все числа от 0 до 9 с нулем, однако числа больше 9 она не будет возвращать, так как ы функции это не укзано, нам нужно дописать в предпоследней строке <b>return num;</b>.                           
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 8
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму элементов массива:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        let arr = [1, 2, 3, 4, 5];<br>
+                        let sum = sum(arr);<br>
+                        console.log/alert(sum);<br><br>
+
+                        function sum(arr) {<br>
+                            let res = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                res += elem;<br>
+                            }<br><br>
+                            
+                            return res;<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br> 
+                            В данной функции ошибка заключается в том, что переменная <b>sum</b> имеет одно название с функцией, поэтому нам надо переименовать либо функцию, либо переменную.                          
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 9
+                </h3>
+                <p class="str_task">
+                    Код должен найти сумму цифр числа:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        let num = 12345;<br>
+                        let res = getDigitsSum(num);<br>
+                        console.log/alert(res);<br><br>
+
+                        function getDigitsSum(num) {<br>
+                            let arr = num.split('');<br>
+                            let sum = 0;<br><br>
+                            
+                            for (let elem of arr) {<br>
+                                sum += elem;<br>
+                            }<br><br>
+                            
+                            return sum;<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>  
+                            В данном задании, несмотря на простоту не все так просто.<br>
+                            У нас есть переменная <b>num</b> имеющая значением число <b>12345</b>, для того чтобы слодить сумму цифр числа, на первоначально необходимо преобразовать число в строку.<br>
+                            Для этого мы в функции первой строкой прописываем <b>num=String(num);</b>.<br>
+                            Таким образом, мы преобразовали наше число в строку.<br>
+                            Далее мы преобразуем нашу строку в массив <b>let arr = num.split('');</b>.<br>
+                            Теперь нам нужно написать цикл, в течении которого будет происходить сложение значений массива и в далее в самом цикле мы прописываем уже непосредственно суммирование, которое будет выполнятся до тех пор пока будет выполнятся цикл.                           
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    Задача № 10
+                </h3>
+                <p class="str_task">
+                    Код должен проверить число на то, что оно является простым:
+                </p>
+                <div class="code_js_task">
+                    <p>
+                        console.log/alert(isPrime(13)); <span class="str_task_answer">// должен вывести true</span><br><br>
+
+                        function isPrime(num) {<br>
+                            for (let i = 2; i < num; i++) {<br>
+                                if (num % i !== 0) {<br>
+                                    return true;<br>
+                                } else {<br>
+                                    return false;<br>
+                                }<br>
+                            }<br>
+                        }
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        <span class="str_task_answer">
+                            Решение/правильный  код смотрим в файле JS<br><br>                            
+                        </span>    
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="practik_function">
+        <h2 class="subtitle">
+            Практика на функции в JavaScript
+        </h2>
+        <div class="">
+            <p class="task_str">
+                В приведенных ниже задачах вам необходимо будет написать функции. Давайте им правильные имена, отражающие их суть, а также при необходимости используйте вспомогательные функции, в том числе полученные в предыдущих заданиях.
+            </p>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 1
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать массив и возвращать сумму его элементов.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 2
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать число и возвращать массив его делителей.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 3
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать строку и возвращать массив ее символов.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 4
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать строку и переворачивать ее символы в обратном порядке.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 5
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву этой строки.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 6
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву каждого слова этой строки.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 7
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, заполняющую массив целыми числами от 1 до заданного.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 8
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая будет возвращать случайный элемент из массива.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 9
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 10
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая будет проверять пару чисел на дружественность.<br>
+                    Дружественные числа - два числа, для которых сумма всех собственных делителей первого числа равна второму числу и наоборот, сумма всех собственных делителей второго числа равна первому числу.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 11
+                </h3>
+                <p class="str_task">
+                    Используя созданную вами функцию из предыдущей задачи найдите все пары дружественных чисел в промежутке от 1 до 1000.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 12
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая будет проверять число на совершенность. Совершенное число - это число, сумма собственных делителей которого равна этому числу.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 13
+                </h3>
+                <p class="str_task">
+                    Найдите все счастливые билеты. Счастливый билет - это билет, в котором сумма первых трех цифр его номера равна сумме вторых трех цифр его номера.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 14
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая параметром будет принимать два числа и возвращать массив их общих делителей.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 15
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая будет принимать строку на русском языке, а возвращать ее транслит.
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+            <div class="task">
+                <h3 class="subtitle_task">
+                    ЗАДАЧА № 16
+                </h3>
+                <p class="str_task">
+                    Сделайте функцию, которая будет принимать число, а возвращать это число прописью. Пусть функция работает с числами до 999. Смотрите пример:
+                </p>
+                <p class="str_task" style="color: green;">
+                    func(123); <span style="color: blueviolet;">// выведет 'сто двадцать три'</span>
+                </p>
+                <div class="code_js_task">
+                    <h4 class="subtitle_task">
+                        Решение
+                    </h4>
+                    <p></p>
+                    <div class="line"></div>
+                    <p><span class="str_task_answer"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class=""><h2 class="subtitle"></h2><div class=""><p></p></div></section>
     <footer></footer>
     
